@@ -1,0 +1,53 @@
+
+$textColor: rgb(47,28,106);
+
+html, body {
+    font-family: 'Rubik', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: $textColor;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+    .logo {
+        width: 147px;
+        height: 30px;
+    }
+    
+    .bars {
+        font-size: 1.5rem;
+    }
+}
+
+main {
+    width: 700px;
+    margin: auto;
+
+    .first-section {
+        text-align: center;
+
+        h1 {
+            padding: 0 1rem;
+        }
+
+        span {
+            color: $textColor;
+            margin: 1rem 0;
+            
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    
+}
