@@ -81,4 +81,37 @@ main .first-section .blue-button {
 main .first-section img {
   width: 100%;
   margin-top: 2rem;
+}
+main .second-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding-top: 200px;
+}
+main .second-section img {
+  margin-right: 80px;
+}
+main .second-section div {
+  height: 150px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: baseline;
+}
+main .second-section div h3 {
+  font-size: 1.7rem;
+  margin: 0;
+}
+main .second-section div img {
+  width: 200px;
+  height: 50px;
+}
+main .second-section div p {
+  margin: 6px 0;
+}
+main .second-section div p span {
+  font-weight: 600;
 }/*# sourceMappingURL=main.css.map */
