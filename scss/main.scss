@@ -1,12 +1,26 @@
 
 $textColor: rgb(47,28,106);
 $buttonColor: rgb(103,61,230);
+$tableColor: #d5dfff;
 
 @mixin centerContent($direction) {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: $direction;
+}
+
+@mixin blueButton {
+    all: unset;
+    width: 291px;
+    height: 40px;
+    background-color: $buttonColor;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 5px;
+    margin-bottom: 1rem;
 }
 
 
@@ -82,16 +96,7 @@ main {
         }
 
         .blue-button {
-            all: unset;
-            width: 291px;
-            height: 40px;
-            background-color: $buttonColor;
-            color: white;
-            cursor: pointer;
-            text-align: center;
-            padding: 5px 0;
-            border-radius: 5px;
-            margin-bottom: 1rem;
+            @include blueButton();
         }
 
         img {
@@ -119,19 +124,99 @@ main {
                 font-size: 1.7rem;
                 margin: 0;
             }
-        }
+            
+            img {
+                width: 200px;
+                height: 50px;
+            }
 
-        div img {
-            width: 200px;
-            height: 50px;
+            p {
+                margin: 6px 0;
+                span {
+                    font-weight: 600;
+                }
+            }
         }
+    }
 
-        div p {
-            margin: 6px 0;
-        }
+    .third-section {
+        padding: 2rem 0;
+        color: $textColor;
+        text-align: center;
+    }
 
-        div p span {
-            font-weight: 600;
+    .fourth-section {
+        color: $textColor;
+        .table-wrapper {
+            padding: 40px 24px;
+            border: 1px solid $tableColor;
+            border-radius: 3px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            .first-table {
+                padding-right: 24px;
+                border-right: 1px solid $tableColor;
+                text-align: center;
+                h3 {
+                    line-height: 32px;
+                    font-size: 20px;
+                }
+
+                div {
+                    .wrapped {
+                        text-decoration: line-through;
+                        opacity: 0.7;
+                        color: black;
+                        padding: 10px;
+                    }
+
+                    .decorated {
+                        background-color: rgb(235,228,255);
+                        color: rgb(80,37,209);
+                        font-weight: 600;
+                        padding: 8px 12px;
+                        border-radius: 20px;
+                    }
+                }
+                
+                :nth-child(3) {
+                    
+                    font-size: 20px;
+                    span {
+                        font-size: 2.5rem;
+                        font-weight: 600
+                    }
+                }
+
+                :nth-child(4) {
+                    line-height: 24px;
+                }
+
+                :nth-child(5) {
+                    color: $buttonColor;
+                    font-weight: 700;
+                }
+
+                .blue-button {
+                    @include blueButton();
+                    margin: 1.5rem 0;
+                }
+            }
+
+            .second-table {
+                .green {
+                    font-weight: 600;
+                    color: green;
+                }
+
+                .round {
+                    font-size: 0.8rem;
+                    border: 2px solid $textColor;
+                    border-radius: 50%;
+                    padding: 2px;
+                }
+            }
         }
     }
 }
