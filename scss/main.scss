@@ -1,5 +1,15 @@
 
 $textColor: rgb(47,28,106);
+$buttonColor: rgb(103,61,230);
+
+@mixin centerContent($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+
 
 html, body {
     font-family: 'Rubik', sans-serif;
@@ -33,20 +43,65 @@ main {
 
     .first-section {
         text-align: center;
+        color: $textColor;
 
         h1 {
             padding: 0 1rem;
         }
 
         span {
-            color: $textColor;
             margin: 1rem 0;
+            &:nth-child(4){
+                font-weight: 600;
+            }
             
+        }
+
+        p {
+            font-size: 1.2rem;
+            span {
+                font-size: 2.5rem;
+                font-weight: 800;
+            }
+        }
+
+        .time-box-wrapper {
+            @include centerContent(row);
+            gap: 3px;
+            margin: 16px 0 24px 0;
+
+            div {
+                height: 64px;
+                width: 64px;
+                font-weight: 500;
+                font-size: 1.5rem;
+                border: 1px solid $textColor;
+                border-radius: 6px;
+                @include centerContent(row);
+            }
+        }
+
+        .blue-button {
+            all: unset;
+            width: 291px;
+            height: 40px;
+            background-color: $buttonColor;
+            color: white;
+            cursor: pointer;
+            text-align: center;
+            padding: 5px 0;
+            border-radius: 5px;
+            margin-bottom: 1rem;
         }
 
         img {
             width: 100%;
+            margin-top: 2rem;
         }
+
+    .second-section {
+        
+    }
     }
 
     
