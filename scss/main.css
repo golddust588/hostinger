@@ -127,6 +127,8 @@ main .fourth-section .table-wrapper {
   padding: 40px 24px;
   border: 1px solid #d5dfff;
   border-radius: 3px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -179,6 +181,20 @@ main .fourth-section .table-wrapper .first-table .blue-button {
   margin-bottom: 1rem;
   margin: 1.5rem 0;
 }
+main .fourth-section .table-wrapper .second-table {
+  padding-left: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 1rem;
+}
+main .fourth-section .table-wrapper .second-table .spread {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
 main .fourth-section .table-wrapper .second-table .green {
   font-weight: 600;
   color: green;
@@ -188,4 +204,54 @@ main .fourth-section .table-wrapper .second-table .round {
   border: 2px solid rgb(47, 28, 106);
   border-radius: 50%;
   padding: 2px;
+}
+main .fourth-section .table-bottom {
+  font-weight: 600;
+  height: 60px;
+  border: 1px solid #d5dfff;
+  border-top: none;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+main .fourth-section .table-bottom a {
+  text-decoration: none;
+}
+main .fourth-section .terms-link {
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 2rem;
+}
+main .fourth-section .terms-link a {
+  text-decoration: none;
+}
+main .fifth-section h1 {
+  padding: 40px 40px 20px 40px;
+}
+main .fifth-section p {
+  margin: 0 20px;
+  text-align: center;
+}
+main .fifth-section .long-button {
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #36344d;
+  text-align: left;
+  line-height: 20px;
+  outline: 0;
+  padding: 13px 16px;
+  width: 100%;
+  cursor: pointer;
+  margin: 40px 0;
+}
+main .fifth-section .long-button:hover {
+  border: 1px solid #5025d1;
+  box-shadow: 0 0 4px #673de6;
 }/*# sourceMappingURL=main.css.map */

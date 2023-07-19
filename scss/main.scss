@@ -151,6 +151,8 @@ main {
             padding: 40px 24px;
             border: 1px solid $tableColor;
             border-radius: 3px;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
             display: grid;
             grid-template-columns: 1fr 1fr;
 
@@ -205,6 +207,18 @@ main {
             }
 
             .second-table {
+                padding-left: 24px;
+                @include centerContent(column); 
+                align-items: baseline;
+                gap: 1rem;
+
+                .spread {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                }
+                
+
                 .green {
                     font-weight: 600;
                     color: green;
@@ -215,8 +229,57 @@ main {
                     border: 2px solid $textColor;
                     border-radius: 50%;
                     padding: 2px;
+                    
                 }
+            }
+        }
+        .table-bottom {
+            a {
+                text-decoration: none;
+            }
+            font-weight: 600;
+            height: 60px;
+            border: 1px solid $tableColor;
+            border-top: none;
+            border-bottom-left-radius: 3px;
+            border-bottom-right-radius: 3px;
+            @include centerContent(row);
+        }
+        .terms-link {
+            a {
+                text-decoration: none;
+            }
+            font-weight: 600;
+            @include centerContent(row);
+            margin: 2rem;
+        }
+    }
+
+    .fifth-section {
+        h1 {
+            padding: 40px 40px 20px 40px;
+        }
+        p {
+            margin: 0 20px;
+            text-align: center;
+        }
+        .long-button {
+            border: 1px solid #dadce0;
+            border-radius: 4px;
+            background-color: #fff;
+            color: #36344d;
+            text-align: left;
+            line-height: 20px;
+            outline: 0;
+            padding: 13px 16px;
+            width: 100%;
+            cursor: pointer;
+            margin: 40px 0;
+            &:hover {
+                border: 1px solid #5025d1;
+                box-shadow: 0 0 4px #673de6;
             }
         }
     }
 }
+
