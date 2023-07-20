@@ -30,6 +30,7 @@ header .logo {
 }
 header .bars {
   font-size: 1.5rem;
+  color: black;
 }
 
 main {
@@ -88,6 +89,10 @@ main .first-section .blue-button {
   padding: 5px 0;
   border-radius: 5px;
   margin-bottom: 1rem;
+  transition: 0.5s;
+}
+main .first-section .blue-button:hover {
+  background-color: rgb(63, 38, 136);
 }
 main .first-section img {
   width: 100%;
@@ -192,7 +197,11 @@ main .fourth-section .table-wrapper .mobile-table .first-table .blue-button {
   padding: 5px 0;
   border-radius: 5px;
   margin-bottom: 1rem;
+  transition: 0.5s;
   margin: 1.5rem 0;
+}
+main .fourth-section .table-wrapper .mobile-table .first-table .blue-button:hover {
+  background-color: rgb(63, 38, 136);
 }
 main .fourth-section .table-wrapper .mobile-table .second-table {
   padding-left: 24px;
@@ -323,9 +332,13 @@ main footer .red-button {
   padding: 5px 0;
   border-radius: 5px;
   margin-bottom: 1rem;
+  transition: 0.5s;
   width: 270px;
   margin: 1.5rem 0;
   background-color: rgb(252, 81, 133);
+}
+main footer .red-button:hover {
+  background-color: rgb(63, 38, 136);
 }
 main footer img {
   width: 500px;
@@ -422,6 +435,9 @@ main footer img {
     padding: 12px;
     cursor: pointer;
   }
+  header :nth-child(2) nav ul li button span:hover {
+    opacity: 0.7;
+  }
   header .bars {
     display: none;
   }
@@ -455,6 +471,7 @@ main footer img {
   main .first-section img {
     min-width: 828px;
     width: 100%;
+    height: 100%;
     margin-top: 0;
     position: relative;
   }
@@ -549,7 +566,11 @@ main footer img {
     padding: 5px 0;
     border-radius: 5px;
     margin-bottom: 1rem;
+    transition: 0.5s;
     margin: 1.5rem 0;
+  }
+  main .fourth-section .table-wrapper .desktop-table .desktop-second-table .blue-button:hover {
+    background-color: rgb(63, 38, 136);
   }
   main .fourth-section .table-wrapper .desktop-table .desktop-third-table {
     padding-left: 40px;
@@ -583,12 +604,15 @@ main footer img {
   main .fifth-section h1 {
     margin-top: 5rem;
   }
+  main .fifth-section .long-button-list {
+    display: none;
+  }
   main .fifth-section .descktop-swicher-span {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    margin-bottom: 2rem;
+    margin: 2rem 0;
   }
   main .fifth-section .descktop-swicher-span span {
     color: rgb(92, 93, 94);
@@ -608,5 +632,14 @@ main footer img {
   }
   main .fifth-section .descktop-swicher-span :nth-child(1):hover {
     border-bottom: 2px solid rgb(103, 61, 230);
+  }
+  main .sixth-section div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  footer {
+    display: none;
   }
 }/*# sourceMappingURL=main.css.map */
