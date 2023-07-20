@@ -1,5 +1,6 @@
 html, body {
   font-family: "Rubik", sans-serif;
+  min-width: 768px;
 }
 
 h1 {
@@ -103,7 +104,7 @@ main .second-section img {
 }
 main .second-section div {
   height: 150px;
-  width: 200px;
+  width: 210px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -210,9 +211,11 @@ main .fourth-section .table-wrapper .second-table .green {
 }
 main .fourth-section .table-wrapper .second-table .round {
   font-size: 0.8rem;
+  width: 12px;
   border: 2px solid rgb(47, 28, 106);
   border-radius: 50%;
   padding: 2px;
+  text-align: center;
 }
 main .fourth-section .table-bottom {
   font-weight: 600;
@@ -278,4 +281,109 @@ main .sixth-section div a img {
   border-radius: 5px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+main footer {
+  color: white;
+  background-color: rgb(47, 28, 106);
+  text-align: center;
+  padding: 3rem;
+}
+main footer .green {
+  font-weight: 600;
+  color: green;
+}
+main footer h1 {
+  color: white;
+}
+main footer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 5px;
+}
+main footer div h3 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+main footer div i {
+  font-size: 0.8rem;
+}
+main footer .red-button {
+  all: unset;
+  width: 291px;
+  height: 40px;
+  background-color: rgb(103, 61, 230);
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  width: 270px;
+  margin: 1.5rem 0;
+  background-color: rgb(252, 81, 133);
+}
+main footer img {
+  width: 500px;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 991px) {
+  header .language-button {
+    display: none;
+  }
+}
+@media screen and (min-width: 992px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 88px;
+    background-color: white;
+    box-sizing: border-box;
+    border-bottom: 2px solid #ccc;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  header .logo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 40px;
+  }
+  header .logo {
+    width: 147px;
+    height: 30px;
+  }
+  header .language-button {
+    all: unset;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  header .language-button img {
+    height: 23px;
+    width: 40px;
+    border-radius: 3px;
+    margin-right: 10px;
+  }
+  header .language-button span {
+    font-weight: 600;
+  }
+  header .language-button span:hover {
+    opacity: 0.7;
+  }
+  header .bars {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */

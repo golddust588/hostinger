@@ -25,8 +25,10 @@ $tableColor: #d5dfff;
 
 
 
+
 html, body {
     font-family: 'Rubik', sans-serif;
+    min-width: 768px;
 }
 
 h1 {
@@ -127,7 +129,7 @@ main {
         
         div {
             height: 150px;
-            width: 200px;
+            width: 210px;
             @include centerContent(column);
             align-items: baseline;
             h3 {
@@ -227,7 +229,6 @@ main {
                     justify-content: space-between;
                     width: 100%;
                 }
-                
 
                 .green {
                     font-weight: 600;
@@ -236,9 +237,11 @@ main {
 
                 .round {
                     font-size: 0.8rem;
+                    width: 12px;
                     border: 2px solid $textColor;
                     border-radius: 50%;
                     padding: 2px;
+                    text-align: center;
                     
                 }
             }
@@ -305,7 +308,106 @@ main {
 
             }
         }
+    }
+
+    footer {
+        color: white;
+        background-color: $textColor;
+        text-align: center;
+        padding: 3rem;
+        .green {
+            font-weight: 600;
+            color: green;
+        }
         
+        h1 {
+            color: white;
+        }
+        div {
+            @include centerContent(row);
+            gap: 5px;
+            h3 {
+                font-size: 1rem;
+                font-weight: 500;
+            }
+            i {
+                font-size: 0.8rem;
+            }
+        }
+        .red-button {
+            @include blueButton();
+            width: 270px;
+            margin: 1.5rem 0;
+            background-color: rgb(252,81,133);
+        }
+        img {
+            width: 500px;
+            border-radius: 10px;
+            margin-top: 50px;
+        }
     }
 }
 
+
+@media screen and (max-width: 991px) {
+    header {
+        .language-button {
+            display: none;
+        }
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 40px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 88px;
+        background-color: white;
+        box-sizing: border-box;
+        border-bottom: 2px solid #ccc;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    
+        .logo-wrapper {
+            @include centerContent(row);
+            gap: 40px;
+        }
+
+        .logo {
+            width: 147px;
+            height: 30px;
+        }
+        
+        .language-button {
+            all: unset;
+            height: 30px;
+            cursor: pointer;
+            @include centerContent(row);
+            img {
+                height: 23px;
+                width: 40px;
+                border-radius: 3px;
+                margin-right: 10px;
+                
+
+            }
+            span {
+                font-weight: 600;
+                &:hover {
+                   opacity: 0.7;
+                }
+            }
+        }
+
+        .bars {
+            display: none;
+        }
+    }
+    
+}
