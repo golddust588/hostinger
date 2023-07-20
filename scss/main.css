@@ -334,12 +334,17 @@ main footer img {
   header .language-button {
     display: none;
   }
+  header nav {
+    display: none;
+  }
 }
 @media screen and (min-width: 992px) {
+  main {
+    margin: 150px auto;
+  }
   header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 20px 40px;
     position: fixed;
     top: 0;
@@ -382,6 +387,33 @@ main footer img {
   }
   header .language-button span:hover {
     opacity: 0.7;
+  }
+  header :nth-child(2) {
+    margin-left: auto;
+  }
+  header :nth-child(2) nav ul {
+    text-align: center;
+    list-style-type: none;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  header :nth-child(2) nav ul li a {
+    color: rgb(92, 93, 94);
+    text-decoration: none;
+  }
+  header :nth-child(2) nav ul li a:hover {
+    opacity: 0.7;
+  }
+  header :nth-child(2) nav ul li button {
+    all: unset;
+    font-weight: 600;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 12px;
+    cursor: pointer;
   }
   header .bars {
     display: none;
