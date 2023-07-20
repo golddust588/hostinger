@@ -140,46 +140,48 @@ main .fourth-section .table-wrapper {
   border-radius: 3px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
+}
+main .fourth-section .table-wrapper .mobile-table {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-main .fourth-section .table-wrapper .first-table {
+main .fourth-section .table-wrapper .mobile-table .first-table {
   padding-right: 24px;
   border-right: 1px solid #d5dfff;
   text-align: center;
 }
-main .fourth-section .table-wrapper .first-table h3 {
+main .fourth-section .table-wrapper .mobile-table .first-table h3 {
   line-height: 32px;
   font-size: 20px;
 }
-main .fourth-section .table-wrapper .first-table div .wrapped {
+main .fourth-section .table-wrapper .mobile-table .first-table div .wrapped {
   text-decoration: line-through;
   opacity: 0.7;
   color: black;
   padding: 10px;
 }
-main .fourth-section .table-wrapper .first-table div .decorated {
+main .fourth-section .table-wrapper .mobile-table .first-table div .decorated {
   background-color: rgb(235, 228, 255);
   color: rgb(80, 37, 209);
   font-weight: 600;
   padding: 8px 12px;
   border-radius: 20px;
 }
-main .fourth-section .table-wrapper .first-table :nth-child(3) {
+main .fourth-section .table-wrapper .mobile-table .first-table :nth-child(3) {
   font-size: 20px;
 }
-main .fourth-section .table-wrapper .first-table :nth-child(3) span {
+main .fourth-section .table-wrapper .mobile-table .first-table :nth-child(3) span {
   font-size: 2.5rem;
   font-weight: 600;
 }
-main .fourth-section .table-wrapper .first-table :nth-child(4) {
+main .fourth-section .table-wrapper .mobile-table .first-table :nth-child(4) {
   line-height: 24px;
 }
-main .fourth-section .table-wrapper .first-table :nth-child(5) {
+main .fourth-section .table-wrapper .mobile-table .first-table :nth-child(5) {
   color: rgb(103, 61, 230);
   font-weight: 700;
 }
-main .fourth-section .table-wrapper .first-table .blue-button {
+main .fourth-section .table-wrapper .mobile-table .first-table .blue-button {
   all: unset;
   width: 291px;
   height: 40px;
@@ -192,7 +194,7 @@ main .fourth-section .table-wrapper .first-table .blue-button {
   margin-bottom: 1rem;
   margin: 1.5rem 0;
 }
-main .fourth-section .table-wrapper .second-table {
+main .fourth-section .table-wrapper .mobile-table .second-table {
   padding-left: 24px;
   display: flex;
   justify-content: center;
@@ -201,16 +203,16 @@ main .fourth-section .table-wrapper .second-table {
   align-items: baseline;
   gap: 1rem;
 }
-main .fourth-section .table-wrapper .second-table .spread {
+main .fourth-section .table-wrapper .mobile-table .second-table .spread {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
-main .fourth-section .table-wrapper .second-table .green {
+main .fourth-section .table-wrapper .mobile-table .second-table .green {
   font-weight: 600;
   color: green;
 }
-main .fourth-section .table-wrapper .second-table .round {
+main .fourth-section .table-wrapper .mobile-table .second-table .round {
   font-size: 0.8rem;
   width: 12px;
   border: 2px solid rgb(47, 28, 106);
@@ -338,6 +340,12 @@ main footer img {
   header nav {
     display: none;
   }
+  main .desktop-table {
+    display: none;
+  }
+  main .descktop-swicher-span {
+    display: none;
+  }
 }
 @media screen and (min-width: 992px) {
   header {
@@ -353,6 +361,7 @@ main footer img {
     box-sizing: border-box;
     border-bottom: 2px solid #ccc;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;
   }
   header .logo-wrapper {
     display: flex;
@@ -451,5 +460,153 @@ main footer img {
   }
   main .second-section {
     gap: 20%;
+  }
+  main .fourth-section .table-wrapper {
+    padding: 40px 24px;
+    border: 1px solid #d5dfff;
+    border-radius: 3px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  main .fourth-section .table-wrapper .mobile-table {
+    display: none;
+  }
+  main .fourth-section .table-wrapper .desktop-table {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  main .fourth-section .table-wrapper .desktop-table .desktop-first-table {
+    padding-right: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 1rem;
+  }
+  main .fourth-section .table-wrapper .desktop-table .desktop-first-table .spread {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  main .fourth-section .table-wrapper .desktop-table .desktop-first-table .green {
+    font-weight: 600;
+    color: green;
+  }
+  main .fourth-section .table-wrapper .desktop-table .desktop-first-table .round {
+    font-size: 0.8rem;
+    width: 12px;
+    border: 2px solid rgb(47, 28, 106);
+    border-radius: 50%;
+    padding: 2px;
+    text-align: center;
+  }
+  main .fourth-section .table-wrapper .desktop-table .desktop-second-table {
+    padding: 0 24px;
+    border-right: 1px solid #d5dfff;
+    border-left: 1px solid #d5dfff;
+    text-align: center;
+  }
+  main .fourth-section .table-wrapper .desktop-table .desktop-second-table h3 {
+    line-height: 32px;
+    font-size: 20px;
+  }
+  main .fourth-section .table-wrapper .desktop-table .desktop-second-table div .wrapped {
+    text-decoration: line-through;
+    opacity: 0.7;
+    color: black;
+    padding: 10px;
+  }
+  main .fourth-section .table-wrapper .desktop-table .desktop-second-table div .decorated {
+    background-color: rgb(235, 228, 255);
+    color: rgb(80, 37, 209);
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 20px;
+  }
+  main .fourth-section .table-wrapper .desktop-table .desktop-second-table :nth-child(3) {
+    font-size: 20px;
+  }
+  main .fourth-section .table-wrapper .desktop-table .desktop-second-table :nth-child(3) span {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  main .fourth-section .table-wrapper .desktop-table .desktop-second-table :nth-child(4) {
+    line-height: 24px;
+  }
+  main .fourth-section .table-wrapper .desktop-table .desktop-second-table :nth-child(5) {
+    color: rgb(103, 61, 230);
+    font-weight: 700;
+  }
+  main .fourth-section .table-wrapper .desktop-table .desktop-second-table .blue-button {
+    all: unset;
+    width: 291px;
+    height: 40px;
+    background-color: rgb(103, 61, 230);
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    margin: 1.5rem 0;
+  }
+  main .fourth-section .table-wrapper .desktop-table .desktop-third-table {
+    padding-left: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 1rem;
+  }
+  main .fourth-section .table-wrapper .desktop-table .desktop-third-table .spread {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  main .fourth-section .table-wrapper .desktop-table .desktop-third-table .green {
+    font-weight: 600;
+    color: green;
+  }
+  main .fourth-section .table-wrapper .desktop-table .desktop-third-table .round {
+    font-size: 0.8rem;
+    width: 12px;
+    border: 2px solid rgb(47, 28, 106);
+    border-radius: 50%;
+    padding: 2px;
+    text-align: center;
+  }
+  main .fourth-section .table-bottom {
+    display: none;
+  }
+  main .fifth-section h1 {
+    margin-top: 5rem;
+  }
+  main .fifth-section .descktop-swicher-span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 2rem;
+  }
+  main .fifth-section .descktop-swicher-span span {
+    color: rgb(92, 93, 94);
+    font-weight: 600;
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(92, 93, 94);
+    opacity: 0.8;
+  }
+  main .fifth-section .descktop-swicher-span span:hover {
+    color: rgb(103, 61, 230);
+    border-bottom: 1px solid rgb(103, 61, 230);
+  }
+  main .fifth-section .descktop-swicher-span :nth-child(1) {
+    color: rgb(103, 61, 230);
+    border-bottom: 2px solid rgb(103, 61, 230);
+  }
+  main .fifth-section .descktop-swicher-span :nth-child(1):hover {
+    border-bottom: 2px solid rgb(103, 61, 230);
   }
 }/*# sourceMappingURL=main.css.map */

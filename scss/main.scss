@@ -166,87 +166,90 @@ main {
             border-radius: 3px;
             border-bottom-left-radius: 0;
             border-bottom-right-radius: 0;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
 
-            .first-table {
-                padding-right: 24px;
-                border-right: 1px solid $tableColor;
-                text-align: center;
-                h3 {
-                    line-height: 32px;
-                    font-size: 20px;
-                }
-
-                div {
-                    .wrapped {
-                        text-decoration: line-through;
-                        opacity: 0.7;
-                        color: black;
-                        padding: 10px;
-                    }
-
-                    .decorated {
-                        background-color: rgb(235,228,255);
-                        color: rgb(80,37,209);
-                        font-weight: 600;
-                        padding: 8px 12px;
-                        border-radius: 20px;
-                    }
-                }
-                
-                :nth-child(3) {
-                    
-                    font-size: 20px;
-                    span {
-                        font-size: 2.5rem;
-                        font-weight: 600
-                    }
-                }
-
-                :nth-child(4) {
-                    line-height: 24px;
-                }
-
-                :nth-child(5) {
-                    color: $buttonColor;
-                    font-weight: 700;
-                }
-
-                .blue-button {
-                    @include blueButton();
-                    margin: 1.5rem 0;
-                }
-            }
-
-            .second-table {
-                padding-left: 24px;
-                @include centerContent(column); 
-                align-items: baseline;
-                gap: 1rem;
-
-                .spread {
-                    display: flex;
-                    justify-content: space-between;
-                    width: 100%;
-                }
-
-                .green {
-                    font-weight: 600;
-                    color: green;
-                }
-
-                .round {
-                    font-size: 0.8rem;
-                    width: 12px;
-                    border: 2px solid $textColor;
-                    border-radius: 50%;
-                    padding: 2px;
+            .mobile-table {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                .first-table {
+                    padding-right: 24px;
+                    border-right: 1px solid $tableColor;
                     text-align: center;
+                    h3 {
+                        line-height: 32px;
+                        font-size: 20px;
+                    }
+    
+                    div {
+                        .wrapped {
+                            text-decoration: line-through;
+                            opacity: 0.7;
+                            color: black;
+                            padding: 10px;
+                        }
+    
+                        .decorated {
+                            background-color: rgb(235,228,255);
+                            color: rgb(80,37,209);
+                            font-weight: 600;
+                            padding: 8px 12px;
+                            border-radius: 20px;
+                        }
+                    }
                     
+                    :nth-child(3) {
+                        
+                        font-size: 20px;
+                        span {
+                            font-size: 2.5rem;
+                            font-weight: 600
+                        }
+                    }
+    
+                    :nth-child(4) {
+                        line-height: 24px;
+                    }
+    
+                    :nth-child(5) {
+                        color: $buttonColor;
+                        font-weight: 700;
+                    }
+    
+                    .blue-button {
+                        @include blueButton();
+                        margin: 1.5rem 0;
+                    }
+                }
+    
+                .second-table {
+                    padding-left: 24px;
+                    @include centerContent(column); 
+                    align-items: baseline;
+                    gap: 1rem;
+    
+                    .spread {
+                        display: flex;
+                        justify-content: space-between;
+                        width: 100%;
+                    }
+    
+                    .green {
+                        font-weight: 600;
+                        color: green;
+                    }
+    
+                    .round {
+                        font-size: 0.8rem;
+                        width: 12px;
+                        border: 2px solid $textColor;
+                        border-radius: 50%;
+                        padding: 2px;
+                        text-align: center;
+                        
+                    }
                 }
             }
         }
+
         .table-bottom {
             a {
                 text-decoration: none;
@@ -355,9 +358,18 @@ main {
         .language-button {
             display: none;
         }
-    nav {
-        display: none;
+        nav {
+            display: none;
+        }
     }
+
+    main {
+        .desktop-table {
+            display: none;
+        }
+        .descktop-swicher-span {
+            display: none;
+        }
     }
 }
 
@@ -377,6 +389,7 @@ main {
         box-sizing: border-box;
         border-bottom: 2px solid #ccc;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        z-index: 10;
     
         .logo-wrapper {
             @include centerContent(row);
@@ -479,6 +492,164 @@ main {
 
         .second-section {
             gap: 20%;
+        }
+
+        .fourth-section {
+            .table-wrapper {
+                padding: 40px 24px;
+                border: 1px solid $tableColor;
+                border-radius: 3px;
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+
+                .mobile-table {
+                    display: none;
+                }
+
+                
+                .desktop-table {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+
+                    .desktop-first-table {
+                        padding-right: 40px;
+                        @include centerContent(column); 
+                        align-items: baseline;
+                        gap: 1rem;
+        
+                        .spread {
+                            display: flex;
+                            justify-content: space-between;
+                            width: 100%;
+                        }
+        
+                        .green {
+                            font-weight: 600;
+                            color: green;
+                        }
+        
+                        .round {
+                            font-size: 0.8rem;
+                            width: 12px;
+                            border: 2px solid $textColor;
+                            border-radius: 50%;
+                            padding: 2px;
+                            text-align: center;
+                        }
+                    }
+
+                    .desktop-second-table {
+                        padding: 0 24px;
+                        border-right: 1px solid $tableColor;
+                        border-left: 1px solid $tableColor;
+                        text-align: center;
+                        h3 {
+                            line-height: 32px;
+                            font-size: 20px;
+                        }
+        
+                        div {
+                            .wrapped {
+                                text-decoration: line-through;
+                                opacity: 0.7;
+                                color: black;
+                                padding: 10px;
+                            }
+        
+                            .decorated {
+                                background-color: rgb(235,228,255);
+                                color: rgb(80,37,209);
+                                font-weight: 600;
+                                padding: 8px 12px;
+                                border-radius: 20px;
+                            }
+                        }
+                        
+                        :nth-child(3) {
+                            
+                            font-size: 20px;
+                            span {
+                                font-size: 2.5rem;
+                                font-weight: 600
+                            }
+                        }
+        
+                        :nth-child(4) {
+                            line-height: 24px;
+                        }
+        
+                        :nth-child(5) {
+                            color: $buttonColor;
+                            font-weight: 700;
+                        }
+        
+                        .blue-button {
+                            @include blueButton();
+                            margin: 1.5rem 0;
+                        }
+                    }
+        
+                    .desktop-third-table {
+                        padding-left: 40px;
+                        @include centerContent(column); 
+                        align-items: baseline;
+                        gap: 1rem;
+        
+                        .spread {
+                            display: flex;
+                            justify-content: space-between;
+                            width: 100%;
+                        }
+        
+                        .green {
+                            font-weight: 600;
+                            color: green;
+                        }
+        
+                        .round {
+                            font-size: 0.8rem;
+                            width: 12px;
+                            border: 2px solid $textColor;
+                            border-radius: 50%;
+                            padding: 2px;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+            .table-bottom {
+                display: none;
+            }
+        }
+
+        .fifth-section {
+            
+            h1 {
+                margin-top: 5rem;
+            }
+            .descktop-swicher-span {
+                @include centerContent(row);
+                margin-bottom: 2rem;
+                span {
+                    color: rgb(92,93,94);
+                    font-weight: 600;
+                    padding: 20px;
+                    cursor: pointer;
+                    border-bottom: 1px solid rgb(92,93,94);
+                    opacity: 0.8;
+                    &:hover {
+                        color: $buttonColor;
+                        border-bottom: 1px solid $buttonColor;
+                    }
+                }
+                :nth-child(1) {
+                    color: $buttonColor;
+                    border-bottom: 2px solid $buttonColor;
+                    &:hover {
+                        border-bottom: 2px solid $buttonColor;
+                    }
+                }
+            }
         }
     }
     
