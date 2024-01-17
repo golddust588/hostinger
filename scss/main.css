@@ -1,6 +1,7 @@
-html, body {
+html,
+body {
   font-family: "Rubik", sans-serif;
-  min-width: 768px;
+  /* min-width: 768px; */
 }
 
 h1 {
@@ -175,7 +176,13 @@ main .fourth-section .table-wrapper .mobile-table .first-table div .decorated {
 main .fourth-section .table-wrapper .mobile-table .first-table :nth-child(3) {
   font-size: 20px;
 }
-main .fourth-section .table-wrapper .mobile-table .first-table :nth-child(3) span {
+main
+  .fourth-section
+  .table-wrapper
+  .mobile-table
+  .first-table
+  :nth-child(3)
+  span {
   font-size: 2.5rem;
   font-weight: 600;
 }
@@ -200,7 +207,12 @@ main .fourth-section .table-wrapper .mobile-table .first-table .blue-button {
   transition: 0.5s;
   margin: 1.5rem 0;
 }
-main .fourth-section .table-wrapper .mobile-table .first-table .blue-button:hover {
+main
+  .fourth-section
+  .table-wrapper
+  .mobile-table
+  .first-table
+  .blue-button:hover {
   background-color: rgb(63, 38, 136);
 }
 main .fourth-section .table-wrapper .mobile-table .second-table {
@@ -292,7 +304,7 @@ main .sixth-section div a img {
   height: 300px;
   border-radius: 5px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 main footer {
   color: white;
@@ -501,16 +513,31 @@ main footer img {
     align-items: baseline;
     gap: 1rem;
   }
-  main .fourth-section .table-wrapper .desktop-table .desktop-first-table .spread {
+  main
+    .fourth-section
+    .table-wrapper
+    .desktop-table
+    .desktop-first-table
+    .spread {
     display: flex;
     justify-content: space-between;
     width: 100%;
   }
-  main .fourth-section .table-wrapper .desktop-table .desktop-first-table .green {
+  main
+    .fourth-section
+    .table-wrapper
+    .desktop-table
+    .desktop-first-table
+    .green {
     font-weight: 600;
     color: green;
   }
-  main .fourth-section .table-wrapper .desktop-table .desktop-first-table .round {
+  main
+    .fourth-section
+    .table-wrapper
+    .desktop-table
+    .desktop-first-table
+    .round {
     font-size: 0.8rem;
     width: 12px;
     border: 2px solid rgb(47, 28, 106);
@@ -528,34 +555,72 @@ main footer img {
     line-height: 32px;
     font-size: 20px;
   }
-  main .fourth-section .table-wrapper .desktop-table .desktop-second-table div .wrapped {
+  main
+    .fourth-section
+    .table-wrapper
+    .desktop-table
+    .desktop-second-table
+    div
+    .wrapped {
     text-decoration: line-through;
     opacity: 0.7;
     color: black;
     padding: 10px;
   }
-  main .fourth-section .table-wrapper .desktop-table .desktop-second-table div .decorated {
+  main
+    .fourth-section
+    .table-wrapper
+    .desktop-table
+    .desktop-second-table
+    div
+    .decorated {
     background-color: rgb(235, 228, 255);
     color: rgb(80, 37, 209);
     font-weight: 600;
     padding: 8px 12px;
     border-radius: 20px;
   }
-  main .fourth-section .table-wrapper .desktop-table .desktop-second-table :nth-child(3) {
+  main
+    .fourth-section
+    .table-wrapper
+    .desktop-table
+    .desktop-second-table
+    :nth-child(3) {
     font-size: 20px;
   }
-  main .fourth-section .table-wrapper .desktop-table .desktop-second-table :nth-child(3) span {
+  main
+    .fourth-section
+    .table-wrapper
+    .desktop-table
+    .desktop-second-table
+    :nth-child(3)
+    span {
     font-size: 2.5rem;
     font-weight: 600;
   }
-  main .fourth-section .table-wrapper .desktop-table .desktop-second-table :nth-child(4) {
+  main
+    .fourth-section
+    .table-wrapper
+    .desktop-table
+    .desktop-second-table
+    :nth-child(4) {
     line-height: 24px;
   }
-  main .fourth-section .table-wrapper .desktop-table .desktop-second-table :nth-child(5) {
+  main
+    .fourth-section
+    .table-wrapper
+    .desktop-table
+    .desktop-second-table
+    :nth-child(5) {
     color: rgb(103, 61, 230);
     font-weight: 700;
   }
-  main .fourth-section .table-wrapper .desktop-table .desktop-second-table .blue-button {
+  main
+    .fourth-section
+    .table-wrapper
+    .desktop-table
+    .desktop-second-table
+    .blue-button {
     all: unset;
     width: 291px;
     height: 40px;
@@ -569,7 +634,12 @@ main footer img {
     transition: 0.5s;
     margin: 1.5rem 0;
   }
-  main .fourth-section .table-wrapper .desktop-table .desktop-second-table .blue-button:hover {
+  main
+    .fourth-section
+    .table-wrapper
+    .desktop-table
+    .desktop-second-table
+    .blue-button:hover {
     background-color: rgb(63, 38, 136);
   }
   main .fourth-section .table-wrapper .desktop-table .desktop-third-table {
@@ -581,16 +651,31 @@ main footer img {
     align-items: baseline;
     gap: 1rem;
   }
-  main .fourth-section .table-wrapper .desktop-table .desktop-third-table .spread {
+  main
+    .fourth-section
+    .table-wrapper
+    .desktop-table
+    .desktop-third-table
+    .spread {
     display: flex;
     justify-content: space-between;
     width: 100%;
   }
-  main .fourth-section .table-wrapper .desktop-table .desktop-third-table .green {
+  main
+    .fourth-section
+    .table-wrapper
+    .desktop-table
+    .desktop-third-table
+    .green {
     font-weight: 600;
     color: green;
   }
-  main .fourth-section .table-wrapper .desktop-table .desktop-third-table .round {
+  main
+    .fourth-section
+    .table-wrapper
+    .desktop-table
+    .desktop-third-table
+    .round {
     font-size: 0.8rem;
     width: 12px;
     border: 2px solid rgb(47, 28, 106);
@@ -642,4 +727,22 @@ main footer img {
   footer {
     display: none;
   }
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
+
+@media screen and (max-width: 720px) {
+  body {
+    min-width: 500px;
+  }
+  main {
+    width: 500px;
+    /* margin: 0; */
+  }
+  main footer img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 50px;
+  }
+  main .second-section img {
+    margin-right: 0px;
+  }
+}
